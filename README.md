@@ -4,64 +4,66 @@
 
 Olá! Seja bem-vindo ao meu GitHub! 👋
 
-Sou estudante de **Análise e Desenvolvimento de Sistemas (ADS) na Universidade Santa Cecília** e estou desenvolvendo minhas habilidades em programação, desenvolvimento de sistemas e criação de soluções tecnológicas.
+Sou estudante de **Análise e Desenvolvimento de Sistemas (ADS) na Universidade Santa Cecília**. Tenho interesse em desenvolvimento de software, criação de aplicações web e construção de soluções tecnológicas para problemas reais.
 
-Meu objetivo é evoluir constantemente como desenvolvedor, construir projetos práticos e aplicar meus conhecimentos na criação de soluções eficientes e escaláveis.
+Busco evoluir continuamente por meio de estudos e projetos práticos, aprimorando minhas habilidades em programação, bancos de dados e desenvolvimento de sistemas.
 
 ---
 
-## 🚀 Tecnologias e ferramentas
+## 🛠️ Tecnologias e ferramentas
 
 <div align="center">
 
-  <img src="https://skillicons.dev/icons?i=java,python,js,html,css,react,tailwind,nodejs,mysql,mongodb,git,github,vscode" alt="Tecnologias e ferramentas" />
+<img src="https://skillicons.dev/icons?i=java,python,js,html,css,react,tailwind,nodejs,mysql,mongodb,git,github,vscode" alt="Tecnologias e ferramentas" />
 
 </div>
 
 ---
 
-## 💻 Projetos em destaque
+## 🚀 Projetos em destaque
 
-### 🍔 MenuPro — Sistema de cardápio digital
+### 🗳️ Sistema de votação do Grêmio Estudantil
 
-Aplicação web de cardápio digital para restaurantes, com foco na apresentação de produtos e na experiência do usuário.
+Meu primeiro projeto de votação desenvolvido para a **Escola Estadual Laudelino Professor, em Praia Grande – SP**.
 
-- **Projeto online:** [Acessar MenuPro](https://cardapio-1.vercel.app/)
-- **Código-fonte:** [Consultar repositórios no GitHub](https://github.com/Carvalho-Eduardo?tab=repositories)
+O projeto foi criado para apoiar o processo de votação do Grêmio Estudantil por meio de uma aplicação web.
 
-_Outros projetos serão adicionados conforme forem organizados e documentados._
+**Destaques do projeto:**
+- Sistema de votação escolar.
+- Identificação do eleitor por RA.
+- Verificação para impedir votos duplicados.
+- Apresentação das chapas candidatas e de suas propostas.
+- Consulta dos resultados da votação.
+
+🔗 **[Acessar repositório no GitHub](https://github.com/Carvalho-Eduardo/votacao-gremio-app)**
+
+---
+
+### 🍔 Cardápio Online
+
+Projeto de cardápio digital desenvolvido para apresentar produtos de um estabelecimento de forma organizada e acessível pela web.
+
+A proposta é facilitar a visualização dos itens do cardápio e oferecer uma experiência simples para os clientes.
+
+🔗 **[Acessar repositório no GitHub](https://github.com/Carvalho-Eduardo/cardapio)**
+
+🌐 **[Visualizar projeto online](https://cardapio-1.vercel.app/)**
 
 ---
 
 ## 🎯 Objetivos profissionais
 
+- Evoluir como desenvolvedor de software.
+- Aprimorar conhecimentos em desenvolvimento backend.
 - Desenvolver aplicações web e sistemas completos.
-- Aprofundar meus conhecimentos em desenvolvimento backend.
-- Aprimorar minhas habilidades em Java, bancos de dados e arquitetura de software.
-- Participar de projetos que resolvam problemas reais.
-- Evoluir continuamente por meio de estudos e experiências práticas.
+- Aprender boas práticas de programação e arquitetura de software.
+- Criar soluções eficientes e escaláveis para problemas reais.
 
 ---
 
-## 📚 Atualmente estudando
+## 📚 Aprendizado contínuo
 
-- Desenvolvimento de software.
-- Programação e lógica computacional.
-- Bancos de dados relacionais e não relacionais.
-- Desenvolvimento backend e boas práticas de código.
-- Git e GitHub para versionamento de projetos.
-
----
-
-## 📊 Meu GitHub
-
-<div align="center">
-
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Carvalho-Eduardo&show_icons=true&theme=github_dark&hide_border=true&locale=pt-br" alt="Estatísticas do GitHub" />
-
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Carvalho-Eduardo&layout=compact&theme=github_dark&hide_border=true&locale=pt-br" alt="Linguagens mais utilizadas" />
-
-</div>
+Estou em constante aprendizado, desenvolvendo projetos práticos e aprofundando meus conhecimentos em programação, bancos de dados, versionamento de código e desenvolvimento de sistemas.
 
 ---
 
@@ -70,12 +72,11 @@ _Outros projetos serão adicionados conforme forem organizados e documentados._
 - 💼 **LinkedIn:** [Eduardo Carvalho](https://linkedin.com/in/e-duardo-carvalho/)
 - 🐙 **GitHub:** [Carvalho-Eduardo](https://github.com/Carvalho-Eduardo)
 - ✉️ **E-mail:** [e.duardo.carvalho@outlook.com](mailto:e.duardo.carvalho@outlook.com)
-- 🌐 **Projeto online:** [MenuPro](https://cardapio-1.vercel.app/)
 
 ---
 
 <div align="center">
 
-_Transformando conhecimento em projetos e ideias em soluções._
+**Transformando conhecimento em projetos e ideias em soluções.** 🚀
 
 </div>
