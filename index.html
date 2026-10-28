@@ -1,330 +1,580 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Perfil profissional de Eduardo Carvalho, estudante de ADS e desenvolvedor em formação."
-    />
-    <meta name="theme-color" content="#0d1117" />
-    <title>Eduardo Carvalho | Desenvolvedor em formação</title>
-    <link rel="stylesheet" href="estilos/style.css" />
-    <script src="scripts/script.js" defer></script>
-    <!-- Biblioteca de ícones para e-mail, GitHub e LinkedIn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <header class="topbar">
-      <a class="marca" href="#inicio" aria-label="Página inicial">
-        <img
-          class="marca-foto"
-          src="img/image.png"
-          alt="Foto de Eduardo Carvalho"
-        />
-        <span>Eduardo Carvalho</span>
-      </a>
+  <meta
+    name="description"
+    content="Portfólio de Eduardo Carvalho, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em formação."
+  >
 
-      <nav class="navegacao" aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a>
-        <a href="#tecnologias">Tecnologias</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </header>
+  <meta name="theme-color" content="#0d1117">
+  <title>Eduardo Carvalho | Portfólio</title>
 
-    <main id="conteudo" class="container">
-      <section id="inicio" class="cartao-perfil painel">
-        <div class="perfil-cabecalho">
-          <img src="img/image.png" alt="Foto de perfil de Eduardo Carvalho" />
-          <span class="status">
-            <span class="status-ponto"></span>
-            Estudante de ADS
-          </span>
-        </div>
-        <div class="perfil-conteudo">
-          <p class="sobretitulo">OLÁ, EU SOU</p>
-          <h1>Eduardo de Souza Carvalho</h1>
-          <p class="cargo">
-            Estudante de Análise e Desenvolvimento de Sistemas
-          </p>
-          <p class="resumo">
-            Estou construindo minha jornada na tecnologia, desenvolvendo
-            projetos práticos e fortalecendo minhas habilidades em programação,
-            desenvolvimento web e banco de dados.
-          </p>
-          <div class="acoes">
-            <a class="botao botao-principal" href="#projetos"
-              >Conheça meus projetos</a
-            >
-            <a class="botao botao-secundario" href="#contato"
-              >Entre em contato</a
-            >
-          </div>
-          <ul class="detalhes-perfil">
-            <li>
-              <span aria-hidden="true">⌖</span> Universidade Santa Cecília
-            </li>
-            <li><span aria-hidden="true">⌘</span> Aprendizado contínuo</li>
-          </ul>
-        </div>
-      </section>
+  <!-- Fonte do site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-      <section id="sobre" class="secao">
-        <div class="titulo-secao">
-          <p class="sobretitulo">UM POUCO SOBRE MIM</p>
-          <h2>Aprendendo, criando e evoluindo.</h2>
-        </div>
-        <div class="sobre-grade">
-          <article class="painel sobre-texto">
-            <h3>Minha trajetória</h3>
-            <p>
-              Sou estudante de ADS na Universidade Santa Cecília e tenho
-              interesse em desenvolvimento de software, principalmente na
-              construção de soluções úteis, organizadas e eficientes.
-            </p>
-            <p>
-              Gosto de aprender colocando a mão na massa: planejar uma ideia,
-              transformar em código, testar e melhorar a cada versão.
-            </p>
-          </article>
-          <article class="painel objetivo">
-            <span class="icone-caixa" aria-hidden="true">✦</span>
-            <h3>Meu objetivo</h3>
-            <p>
-              Desenvolver minhas competências técnicas, colaborar com boas
-              equipes e criar soluções eficientes e escaláveis.
-            </p>
-          </article>
-        </div>
-      </section>
+  <!-- Biblioteca de ícones -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
 
-      <section id="tecnologias" class="secao">
-        <div class="titulo-secao">
-          <p class="sobretitulo">FERRAMENTAS E ESTUDOS</p>
-          <h2>Tecnologias que estou explorando</h2>
-          <p class="texto-secundario">
-            Tecnologias com as quais estudo ou desenvolvo projetos.
-          </p>
-        </div>
-        <div class="tecnologias-grade">
-          <span class="tecnologia"
-            ><span class="tecnologia-ponto html"></span> HTML</span
-          >
-          <span class="tecnologia"
-            ><span class="tecnologia-ponto css"></span> CSS</span
-          >
-          <span class="tecnologia"
-            ><span class="tecnologia-ponto js"></span> JavaScript</span
-          >
-          <span class="tecnologia"
-            ><span class="tecnologia-ponto java"></span> Java</span
-          >
-          <span class="tecnologia"
-            ><span class="tecnologia-ponto python"></span> Python</span
-          >
-          <span class="tecnologia"
-            ><span class="tecnologia-ponto sql"></span> MySQL</span
-          >
-          <span class="tecnologia"
-            ><span class="tecnologia-ponto git"></span> Git e GitHub</span
-          >
-          <span class="tecnologia"
-            ><span class="tecnologia-ponto mongo"></span> MongoDB</span
-          >
-        </div>
-      </section>
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
 
-      <section id="projetos" class="secao">
-        <div class="titulo-secao titulo-com-link">
-          <div>
-            <p class="sobretitulo">PRÁTICA EM CÓDIGO</p>
-            <h2>Projetos em destaque</h2>
-          </div>
-          <a
-            class="link-seta"
-            href="https://github.com/Carvalho-Eduardo"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ver GitHub ↗</a
-          >
-        </div>
-        <div class="projetos-grade">
-          <article class="projeto painel">
-            <div class="projeto-topo">
-              <span class="icone-projeto">▣</span>
-              <span class="projeto-tipo">Web</span>
-            </div>
-            <h3>MenuPro</h3>
-            <p>
-              Projeto de cardápio digital para apresentar produtos e facilitar a
-              experiência de pedidos de um estabelecimento.
-            </p>
-            <div class="etiquetas">
-              <span>React</span><span>Vite</span><span>Tailwind CSS</span>
-            </div>
-            <a
-              class="link-projeto"
-              href="https://cardapio-1.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ver projeto ↗</a
-            >
-          </article>
+<body id="inicio">
 
-          <article class="projeto painel">
-            <div class="projeto-topo">
-              <span class="icone-projeto">▤</span>
-              <span class="projeto-tipo">Sistema</span>
-            </div>
-            <h3>Gestão de dispositivos escolares</h3>
-            <p>
-              Sistema em desenvolvimento para organizar inventário, empréstimos,
-              devoluções, agendamentos e histórico de equipamentos.
-            </p>
-            <div class="etiquetas">
-              <span>Gestão</span><span>Banco de dados</span><span>Web</span>
-            </div>
-            <a
-              class="link-projeto"
-              href="https://github.com/Carvalho-Eduardo"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ver no GitHub ↗</a
-            >
-          </article>
+  <!-- Cabeçalho -->
+  <header class="topbar">
+    <a class="marca" href="#inicio" aria-label="Página inicial">
+      <img
+        class="marca-foto"
+        src="img/image.png"
+        alt="Foto de Eduardo Carvalho"
+      >
+      <span>Eduardo Carvalho<span class="ponto">.</span></span>
+    </a>
 
-          <article class="projeto painel">
-            <div class="projeto-topo">
-              <span class="icone-projeto">◇</span>
-              <span class="projeto-tipo">Aplicação</span>
-            </div>
-            <h3>Votação do Grêmio</h3>
-            <p>
-              Aplicação web para votação escolar, com identificação de
-              estudante, prevenção de voto duplicado e consulta de resultados.
-            </p>
-            <div class="etiquetas">
-              <span>JavaScript</span><span>API</span><span>Vercel</span>
-            </div>
-            <a
-              class="link-projeto"
-              href="https://github.com/Carvalho-Eduardo"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ver repositórios ↗</a
-            >
-          </article>
-        </div>
-        <p class="nota-projetos">
-          Confira os links antes de publicar. Substitua os links gerais pelos
-          endereços específicos dos repositórios, quando disponíveis.
-        </p>
-      </section>
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-      <section id="curriculo" class="secao">
-        <div class="curriculo painel">
-          <div class="curriculo-icone" aria-hidden="true">▤</div>
-          <div class="curriculo-texto">
-            <p class="sobretitulo">CURRÍCULO</p>
-            <h2>Vamos conversar sobre oportunidades?</h2>
-            <p>Confira meu currículo em PDF</p>
-          </div>
-          <a
-            class="botao botao-principal"
-            href="arquivos/curriculo-eduardo.pdf"
-            download
-            >Baixar currículo ↓</a
-          >
-        </div>
-      </section>
+  <main>
 
-      <section id="contato" class="secao">
-        <h2>Entre em contato</h2>
+    <!-- Apresentação principal -->
+    <section class="hero container" aria-labelledby="titulo-principal">
 
-        <p>
-          Vamos conversar sobre tecnologia, desenvolvimento e oportunidades
-          profissionais.
+      <div class="hero-conteudo">
+        <span class="etiqueta">
+          <span class="status-ponto"></span>
+          Estudante de ADS
+        </span>
+
+        <p class="texto-superior">Olá, eu sou</p>
+
+        <h1 id="titulo-principal">
+          Eduardo Carvalho<span class="ponto">.</span>
+        </h1>
+
+        <h2 class="hero-subtitulo">Desenvolvedor em formação</h2>
+
+        <p class="hero-descricao">
+          Estudante de Análise e Desenvolvimento de Sistemas na
+          Universidade Santa Cecília. Tenho interesse em programação,
+          desenvolvimento de sistemas e criação de soluções tecnológicas
+          para problemas reais.
         </p>
 
-        <div class="links-contato">
-          <!-- E-mail -->
-          <a
-            href="mailto:e.duardo.carvalho@outlook.com"
-            class="link-contato"
-            aria-label="Enviar e-mail"
-          >
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            <span>E-mail</span>
+        <div class="hero-acoes">
+          <a href="#projetos" class="botao botao-principal">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            Conheça meus projetos
           </a>
 
-          <!-- GitHub -->
+          <a href="#contato" class="botao botao-secundario">
+            Entre em contato
+          </a>
+        </div>
+
+        <div class="hero-redes" aria-label="Redes profissionais">
           <a
             href="https://github.com/Carvalho-Eduardo"
-            class="link-contato"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Acessar meu GitHub"
+            aria-label="GitHub"
+            title="GitHub"
           >
             <i class="fa-brands fa-github" aria-hidden="true"></i>
-            <span>GitHub</span>
           </a>
 
-          <!-- LinkedIn -->
           <a
             href="https://linkedin.com/in/e-duardo-carvalho/"
-            class="link-contato"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Acessar meu LinkedIn"
+            aria-label="LinkedIn"
+            title="LinkedIn"
           >
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-            <span>LinkedIn</span>
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="mailto:e.duardo.carvalho@outlook.com"
+            aria-label="E-mail"
+            title="E-mail"
+          >
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
           </a>
         </div>
-      </section>
+      </div>
 
-      <section id="curriculo" class="secao">
-        <h2>Meu currículo</h2>
+      <!-- Foto principal no lugar da ilustração de código -->
+      <div class="hero-visual hero-visual-foto">
+        <div class="foto-brilho"></div>
+
+        <div class="foto-destaque">
+          <img
+            src="img/image.png"
+            alt="Eduardo Carvalho, estudante de Análise e Desenvolvimento de Sistemas"
+          >
+
+          <div class="foto-legenda">
+            <span class="status-ponto"></span>
+
+            <div>
+              <strong>Eduardo Carvalho</strong>
+              <p>Desenvolvedor em formação</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="foto-simbolo foto-simbolo-codigo" aria-hidden="true">
+          <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="foto-simbolo foto-simbolo-terminal" aria-hidden="true">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="sobre" class="secao container">
+      <div class="titulo-secao">
+        <span class="numero-secao">01 / SOBRE</span>
+        <h2>Sobre mim</h2>
+        <p>Conhecimento, prática e evolução constante.</p>
+      </div>
+
+      <div class="sobre-card">
+        <div class="sobre-icone">
+          <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+        </div>
+
+        <div class="sobre-texto">
+          <h3>Transformando aprendizado em projetos</h3>
+
+          <p>
+            Sou estudante de Análise e Desenvolvimento de Sistemas na
+            Universidade Santa Cecília e estou construindo minha trajetória
+            na área de tecnologia por meio de estudos e projetos práticos.
+          </p>
+
+          <p>
+            Gosto de explorar novas tecnologias, desenvolver aplicações e
+            encontrar maneiras de transformar necessidades em soluções
+            funcionais. Meu objetivo é continuar aprimorando minhas
+            habilidades em desenvolvimento de software e backend.
+          </p>
+
+          <p>
+            Acredito que cada projeto é uma oportunidade de aprender,
+            resolver problemas e evoluir como profissional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="tecnologias" class="secao container">
+      <div class="titulo-secao">
+        <span class="numero-secao">02 / TECNOLOGIAS</span>
+        <h2>Tecnologias e ferramentas</h2>
+        <p>Ferramentas que fazem parte da minha jornada de aprendizado.</p>
+      </div>
+
+      <div class="tecnologias-grid">
+        <article class="tecnologia-card">
+          <i class="fa-brands fa-java" aria-hidden="true"></i>
+          <span>Java</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-brands fa-python" aria-hidden="true"></i>
+          <span>Python</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-brands fa-js" aria-hidden="true"></i>
+          <span>JavaScript</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-brands fa-html5" aria-hidden="true"></i>
+          <span>HTML5</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+          <span>CSS3</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-brands fa-react" aria-hidden="true"></i>
+          <span>React</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-solid fa-database" aria-hidden="true"></i>
+          <span>MySQL</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+          <span>MongoDB</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+          <span>Git</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <span>GitHub</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-solid fa-wind" aria-hidden="true"></i>
+          <span>Tailwind CSS</span>
+        </article>
+
+        <article class="tecnologia-card">
+          <i class="fa-solid fa-server" aria-hidden="true"></i>
+          <span>Node.js</span>
+        </article>
+      </div>
+
+      <p class="nota-tecnologias">
+        Esta lista representa tecnologias com as quais estudo ou trabalho
+        em projetos. Meu nível de experiência varia conforme a ferramenta.
+      </p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="secao container">
+      <div class="titulo-secao">
+        <span class="numero-secao">03 / PROJETOS</span>
+        <h2>Projetos em destaque</h2>
+        <p>
+          Projetos práticos que fazem parte da minha trajetória
+          de desenvolvimento.
+        </p>
+      </div>
+
+      <div class="projetos-grid">
+
+        <!-- Projeto 1: Votação do Grêmio -->
+        <article class="projeto-card">
+          <div class="projeto-capa capa-votacao">
+            <div class="capa-conteudo">
+              <div class="capa-icone">
+                <i class="fa-solid fa-check-to-slot" aria-hidden="true"></i>
+              </div>
+
+              <span class="capa-etiqueta">Projeto escolar</span>
+              <h3>Votação do Grêmio</h3>
+              <p>Uma solução digital para votação escolar</p>
+            </div>
+
+            <span class="capa-numero">01</span>
+          </div>
+
+          <div class="projeto-conteudo">
+            <div class="projeto-meta">
+              <span>
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                Educação
+              </span>
+
+              <span>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                Aplicação web
+              </span>
+            </div>
+
+            <h3>Sistema de votação do Grêmio Estudantil</h3>
+
+            <p>
+              Meu primeiro projeto de votação escolar, desenvolvido para
+              a Escola Estadual Laudelino Professor, em Praia Grande – SP.
+              A aplicação foi criada para apoiar o processo eleitoral
+              estudantil de forma digital.
+            </p>
+
+            <ul class="projeto-recursos">
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                Identificação do eleitor por RA
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                Verificação para evitar votos duplicados
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                Apresentação das chapas e resultados
+              </li>
+            </ul>
+
+            <div class="projeto-tags">
+              <span>Votação digital</span>
+              <span>Sistema web</span>
+              <span>Projeto escolar</span>
+            </div>
+
+            <div class="projeto-acoes">
+              <a
+                href="https://github.com/Carvalho-Eduardo/votacao-gremio-app"
+                class="botao botao-principal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                Ver código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 2: Cardápio Online -->
+        <article class="projeto-card">
+          <div class="projeto-capa capa-cardapio">
+            <div class="capa-conteudo">
+              <div class="capa-icone">
+                <i class="fa-solid fa-burger" aria-hidden="true"></i>
+              </div>
+
+              <span class="capa-etiqueta">Projeto web</span>
+              <h3>Cardápio Online</h3>
+              <p>Produtos apresentados em um cardápio digital</p>
+            </div>
+
+            <span class="capa-numero">02</span>
+          </div>
+
+          <div class="projeto-conteudo">
+            <div class="projeto-meta">
+              <span>
+                <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                Web
+              </span>
+
+              <span>
+                <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                Acesso online
+              </span>
+            </div>
+
+            <h3>Cardápio Online</h3>
+
+            <p>
+              Projeto de cardápio digital desenvolvido para apresentar
+              produtos de um estabelecimento de forma organizada e
+              acessível pela web, com foco na experiência do usuário.
+            </p>
+
+            <ul class="projeto-recursos">
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                Apresentação digital dos produtos
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                Navegação por uma interface web
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                Projeto publicado para visualização online
+              </li>
+            </ul>
+
+            <div class="projeto-tags">
+              <span>Cardápio digital</span>
+              <span>Desenvolvimento web</span>
+              <span>Vercel</span>
+            </div>
+
+            <div class="projeto-acoes">
+              <a
+                href="https://github.com/Carvalho-Eduardo/cardapio"
+                class="botao botao-secundario"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                Ver código
+              </a>
+
+              <a
+                href="https://cardapio-1.vercel.app/"
+                class="botao botao-principal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                Ver online
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Currículo -->
+    <section id="curriculo" class="secao container">
+      <div class="curriculo-card">
+        <div class="curriculo-icone">
+          <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+        </div>
+
+        <div class="curriculo-texto">
+          <span class="numero-secao">CURRÍCULO</span>
+
+          <h2>Vamos construir novas oportunidades?</h2>
+
+          <p>
+            Confira meu currículo para conhecer minha formação,
+            minhas habilidades e minha trajetória.
+          </p>
+        </div>
+
+        <div class="curriculo-acoes">
+          <a
+            href="arquivos/curriculo-eduardo.pdf"
+            class="botao botao-principal"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+            Visualizar currículo
+          </a>
+
+          <a
+            href="arquivos/curriculo-eduardo.pdf"
+            class="botao botao-secundario"
+            download="Curriculo-Eduardo-Carvalho.pdf"
+          >
+            <i class="fa-solid fa-download" aria-hidden="true"></i>
+            Baixar PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="secao container">
+      <div class="titulo-secao">
+        <span class="numero-secao">04 / CONTATO</span>
+        <h2>Vamos conversar?</h2>
 
         <p>
-          Confira minha trajetória acadêmica, habilidades técnicas e
-          experiências profissionais.
+          Estou aberto a trocar conhecimentos, conhecer projetos
+          e conversar sobre oportunidades na área de tecnologia.
         </p>
+      </div>
+
+      <div class="contatos-grid">
 
         <a
-          href="arquivos/curriculo-eduardo.pdf"
-          class="botao-curriculo"
+          class="contato-card"
+          href="mailto:e.duardo.carvalho@outlook.com"
+        >
+          <span class="contato-icone">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </span>
+
+          <span class="contato-detalhes">
+            <strong>E-mail</strong>
+            <small>Envie uma mensagem</small>
+          </span>
+
+          <i
+            class="fa-solid fa-arrow-up-right-from-square contato-seta"
+            aria-hidden="true"
+          ></i>
+        </a>
+
+        <a
+          class="contato-card"
+          href="https://github.com/Carvalho-Eduardo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
-          Visualizar currículo
+          <span class="contato-icone">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+
+          <span class="contato-detalhes">
+            <strong>GitHub</strong>
+            <small>Veja meus repositórios</small>
+          </span>
+
+          <i
+            class="fa-solid fa-arrow-up-right-from-square contato-seta"
+            aria-hidden="true"
+          ></i>
         </a>
 
         <a
-          href="arquivos/curriculo-eduardo.pdf"
-          class="botao-curriculo"
-          download="Curriculo-Eduardo-Carvalho.pdf"
+          class="contato-card"
+          href="https://linkedin.com/in/e-duardo-carvalho/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <i class="fa-solid fa-download" aria-hidden="true"></i>
-          Baixar currículo
-        </a>
-      </section>
-    </main>
+          <span class="contato-icone">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </span>
 
-    <footer class="rodape">
-      <p>Desenvolvido por <strong>Eduardo Carvalho</strong></p>
-      <p>
-        © <span id="ano-atual">2026</span> · Feito com dedicação e aprendizado
-        contínuo.
-      </p>
-      <a href="#inicio" class="voltar-topo">Voltar ao topo ↑</a>
-    </footer>
-  </body>
+          <span class="contato-detalhes">
+            <strong>LinkedIn</strong>
+            <small>Conecte-se comigo</small>
+          </span>
+
+          <i
+            class="fa-solid fa-arrow-up-right-from-square contato-seta"
+            aria-hidden="true"
+          ></i>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <a href="#inicio" class="rodape-marca">
+      Eduardo Carvalho<span class="ponto">.</span>
+    </a>
+
+    <p>Desenvolvido com dedicação por Eduardo Carvalho.</p>
+
+    <p class="rodape-copyright">
+      &copy; <span id="ano-atual"></span> Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts/script.js"></script>
+
+</body>
 </html>
