@@ -1,8 +1,38 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaCode, FaDatabase, FaLaptopCode, FaLayerGroup } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaDownload,
+  FaCode,
+  FaDatabase,
+  FaLaptopCode,
+  FaLayerGroup,
+} from "react-icons/fa";
+
 import SectionTitle from "../components/ui/SectionTitle";
 import technologies from "../data/technologies";
 
 function Home() {
+  const baseUrl = import.meta.env.BASE_URL;
+
+  const emailSubject = encodeURIComponent(
+    "Contato profissional pelo portfólio",
+  );
+
+  const emailBody = encodeURIComponent(
+    "Olá, Eduardo!\n\nConheci seu portfólio e entrei em contato por meio do seu site.\n\nGostaria de conversar com você sobre uma oportunidade ou possível colaboração na área de tecnologia.\n\nFico à disposição para conversarmos.\n\nAtenciosamente,\n[Seu nome]",
+  );
+
+  const emailLink = `mailto:e.duardo.carvalho@outlook.com?subject=${emailSubject}&body=${emailBody}`;
+
+  const categories = [
+    { title: "Linguagens", icon: FaCode, group: "Linguagens" },
+    { title: "Frontend", icon: FaLayerGroup, group: "Frontend" },
+    { title: "Backend", icon: FaLaptopCode, group: "Backend" },
+    { title: "Banco de dados", icon: FaDatabase, group: "Dados" },
+    { title: "Ferramentas", icon: FaCode, group: "Ferramentas" },
+  ];
+
   return (
     <main>
       {/* Apresentação principal */}
@@ -35,7 +65,7 @@ function Home() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="/projetos"
+              href={`${baseUrl}projetos`}
               className="rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white transition hover:bg-blue-600"
             >
               Conheça meus projetos
@@ -76,11 +106,7 @@ function Home() {
             </a>
 
             <a
-              href={`mailto:e.duardo.carvalho@outlook.com?subject=${encodeURIComponent(
-                "Contato profissional pelo portfólio",
-              )}&body=${encodeURIComponent(
-                "Olá, Eduardo!\n\nConheci seu portfólio e entrei em contato por meio do seu site.\n\nGostaria de conversar com você sobre uma oportunidade ou possível colaboração na área de tecnologia.\n\nFico à disposição para conversarmos.\n\nAtenciosamente,\n[Seu nome]",
-              )}`}
+              href={emailLink}
               aria-label="Enviar e-mail"
               className="text-slate-400 transition hover:text-blue-400"
             >
@@ -94,15 +120,24 @@ function Home() {
           <div className="absolute -inset-3 rounded-3xl border border-blue-400/20" />
 
           <img
-            src="/img/image.png"
+            src={`${baseUrl}img/image.png`}
             alt="Foto profissional de Eduardo Carvalho"
             className="relative aspect-[4/5] w-full rounded-2xl border border-[#293442] object-cover shadow-2xl shadow-blue-950/30"
+            onError={(event) => {
+              console.error(
+                "Não foi possível carregar a foto:",
+                event.currentTarget.src,
+              );
+            }}
           />
         </div>
       </section>
 
       {/* Sobre mim */}
-      <section id="sobre" className="animate-fade-up mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+      <section
+        id="sobre"
+        className="animate-fade-up mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20"
+      >
         <SectionTitle>Sobre mim</SectionTitle>
 
         <div className="mt-8 grid gap-8 md:grid-cols-[1fr_auto] md:items-start">
@@ -140,7 +175,7 @@ function Home() {
             </p>
 
             <a
-              href="/arquivos/curriculo-eduardo.pdf"
+              href={`${baseUrl}arquivos/curriculo-eduardo.pdf`}
               download="Curriculo-Eduardo-Carvalho.pdf"
               className="botao botao-principal mt-5 w-full"
             >
@@ -152,52 +187,107 @@ function Home() {
       </section>
 
       {/* Experiência prática com projetos */}
-      <section id="experiencia" className="animate-fade-up mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+      <section
+        id="experiencia"
+        className="animate-fade-up mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20"
+      >
         <SectionTitle>Experiência prática</SectionTitle>
 
         <p className="mb-8 max-w-3xl text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
-          Estou desenvolvendo minha experiência por meio de projetos práticos, aplicando os conhecimentos da graduação e estudando como transformar necessidades em aplicações web funcionais.
+          Estou desenvolvendo minha experiência por meio de projetos práticos,
+          aplicando os conhecimentos da graduação e estudando como transformar
+          necessidades em aplicações web funcionais.
         </p>
 
         <div className="grid gap-4 md:grid-cols-2">
           <article className="rounded-2xl border border-[#293442] bg-[#161b22] p-6 transition hover:border-blue-400/40">
-            <FaLaptopCode className="mb-4 text-2xl text-blue-400" aria-hidden="true" />
-            <h3 className="text-lg font-semibold text-slate-100">Sistema de votação escolar</h3>
+            <FaLaptopCode
+              className="mb-4 text-2xl text-blue-400"
+              aria-hidden="true"
+            />
+
+            <h3 className="text-lg font-semibold text-slate-100">
+              Sistema de votação escolar
+            </h3>
+
             <p className="mt-3 text-sm leading-7 text-slate-400">
-              Projeto para organizar a votação do Grêmio Estudantil, com identificação dos alunos, prevenção de votos duplicados e apresentação das chapas e resultados.
+              Projeto para organizar a votação do Grêmio Estudantil, com
+              identificação dos alunos, prevenção de votos duplicados e
+              apresentação das chapas e resultados.
             </p>
-            <p className="mt-4 text-xs leading-6 text-slate-500">Prática com interfaces React, lógica de aplicação e publicação web.</p>
+
+            <p className="mt-4 text-xs leading-6 text-slate-500">
+              Prática com interfaces React, lógica de aplicação e publicação
+              web.
+            </p>
+
+            <a
+              href="https://votacao-gremio-app.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-block font-semibold text-blue-400 transition hover:text-blue-300"
+            >
+              Ver projeto →
+            </a>
           </article>
 
           <article className="rounded-2xl border border-[#293442] bg-[#161b22] p-6 transition hover:border-blue-400/40">
-            <FaCode className="mb-4 text-2xl text-blue-400" aria-hidden="true" />
-            <h3 className="text-lg font-semibold text-slate-100">Cardápio online</h3>
+            <FaCode
+              className="mb-4 text-2xl text-blue-400"
+              aria-hidden="true"
+            />
+
+            <h3 className="text-lg font-semibold text-slate-100">
+              Cardápio online
+            </h3>
+
             <p className="mt-3 text-sm leading-7 text-slate-400">
-              Aplicação de cardápio digital que apresenta produtos de forma organizada e busca oferecer uma experiência simples em diferentes tamanhos de tela.
+              Aplicação de cardápio digital que apresenta produtos de forma
+              organizada e busca oferecer uma experiência simples em diferentes
+              tamanhos de tela.
             </p>
-            <p className="mt-4 text-xs leading-6 text-slate-500">Prática com componentes de interface, organização de conteúdo e responsividade.</p>
+
+            <p className="mt-4 text-xs leading-6 text-slate-500">
+              Prática com componentes de interface, organização de conteúdo e
+              responsividade.
+            </p>
+
+            <a
+              href="https://cardapio-1.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-block font-semibold text-blue-400 transition hover:text-blue-300"
+            >
+              Ver projeto →
+            </a>
           </article>
         </div>
       </section>
 
       {/* Tecnologias */}
-      <section id="tecnologias" className="animate-fade-up mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+      <section
+        id="tecnologias"
+        className="animate-fade-up mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20"
+      >
         <SectionTitle>Tecnologias</SectionTitle>
 
         <p className="mb-8 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
-          Tecnologias e ferramentas que estudo e utilizo em projetos práticos. Minha experiência varia conforme a ferramenta e continuo aprofundando meus conhecimentos.
+          Tecnologias e ferramentas que estudo e utilizo em projetos práticos.
+          Minha experiência varia conforme a ferramenta e continuo aprofundando
+          meus conhecimentos.
         </p>
 
         <div className="grid gap-8">
-          {[
-            { title: "Linguagens", icon: FaCode, group: "Linguagens" },
-            { title: "Frontend", icon: FaLayerGroup, group: "Frontend" },
-            { title: "Backend", icon: FaLaptopCode, group: "Backend" },
-            { title: "Banco de dados", icon: FaDatabase, group: "Dados" },
-            { title: "Ferramentas", icon: FaCode, group: "Ferramentas" },
-          ].map((category) => {
+          {categories.map((category) => {
             const Icon = category.icon;
-            const items = technologies.filter((technology) => technology.group === category.group);
+
+            const items = technologies.filter(
+              (technology) => technology.group === category.group,
+            );
+
+            if (items.length === 0) {
+              return null;
+            }
 
             return (
               <div key={category.group}>
@@ -205,11 +295,20 @@ function Home() {
                   <Icon className="text-blue-400" aria-hidden="true" />
                   {category.title}
                 </h3>
+
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
                   {items.map((technology) => (
-                    <div key={technology.name} className="rounded-xl border border-[#293442] bg-[#161b22] p-4 transition duration-200 hover:-translate-y-1 hover:border-blue-400/60">
-                      <h4 className="font-semibold text-slate-100">{technology.name}</h4>
-                      <p className="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">{technology.category}</p>
+                    <div
+                      key={technology.name}
+                      className="rounded-xl border border-[#293442] bg-[#161b22] p-4 transition duration-200 hover:-translate-y-1 hover:border-blue-400/60"
+                    >
+                      <h4 className="font-semibold text-slate-100">
+                        {technology.name}
+                      </h4>
+
+                      <p className="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+                        {technology.category}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -220,7 +319,10 @@ function Home() {
       </section>
 
       {/* Contato */}
-      <section id="contato" className="animate-fade-up mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+      <section
+        id="contato"
+        className="animate-fade-up mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20"
+      >
         <SectionTitle>Vamos conversar?</SectionTitle>
 
         <div className="mt-8 max-w-3xl rounded-2xl border border-[#293442] bg-[#161b22] p-8 sm:p-10">
@@ -255,14 +357,7 @@ function Home() {
               LinkedIn
             </a>
 
-            <a
-              href={`mailto:e.duardo.carvalho@outlook.com?subject=${encodeURIComponent(
-                "Contato profissional pelo portfólio",
-              )}&body=${encodeURIComponent(
-                "Olá, Eduardo!\n\nConheci seu portfólio e entrei em contato por meio do seu site.\n\nGostaria de conversar com você sobre uma oportunidade ou possível colaboração na área de tecnologia.\n\nFico à disposição para conversarmos.\n\nAtenciosamente,\n[Seu nome]",
-              )}`}
-              className="botao botao-secundario"
-            >
+            <a href={emailLink} className="botao botao-secundario">
               <FaEnvelope size={20} />
               E-mail
             </a>

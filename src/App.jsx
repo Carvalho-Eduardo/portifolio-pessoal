@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <BrowserRouter basename="/portifolio-pessoal">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-[#0d1117] text-slate-100">
         <Header />
 
