@@ -1,82 +1,16 @@
-# 👨‍💻 Eduardo Carvalho
+# React + Vite
 
-### Desenvolvedor em formação | Análise e Desenvolvimento de Sistemas
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-Olá! Seja bem-vindo ao meu GitHub! 👋
+Currently, two official plugins are available:
 
-Sou estudante de **Análise e Desenvolvimento de Sistemas (ADS) na Universidade Santa Cecília**. Tenho interesse em desenvolvimento de software, criação de aplicações web e construção de soluções tecnológicas para problemas reais.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Busco evoluir continuamente por meio de estudos e projetos práticos, aprimorando minhas habilidades em programação, bancos de dados e desenvolvimento de sistemas.
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🛠️ Tecnologias e ferramentas
+## Expanding the Oxlint configuration
 
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=java,python,js,html,css,react,tailwind,nodejs,mysql,mongodb,git,github,vscode" alt="Tecnologias e ferramentas" />
-
-</div>
-
----
-
-## 🚀 Projetos em destaque
-
-### 🗳️ Sistema de votação do Grêmio Estudantil
-
-Meu primeiro projeto de votação desenvolvido para a **Escola Estadual Laudelino Professor, em Praia Grande – SP**.
-
-O projeto foi criado para apoiar o processo de votação do Grêmio Estudantil por meio de uma aplicação web.
-
-**Destaques do projeto:**
-- Sistema de votação escolar.
-- Identificação do eleitor por RA.
-- Verificação para impedir votos duplicados.
-- Apresentação das chapas candidatas e de suas propostas.
-- Consulta dos resultados da votação.
-
-🔗 **[Acessar repositório no GitHub](https://github.com/Carvalho-Eduardo/votacao-gremio-app)**
-
----
-
-### 🍔 Cardápio Online
-
-Projeto de cardápio digital desenvolvido para apresentar produtos de um estabelecimento de forma organizada e acessível pela web.
-
-A proposta é facilitar a visualização dos itens do cardápio e oferecer uma experiência simples para os clientes.
-
-🔗 **[Acessar repositório no GitHub](https://github.com/Carvalho-Eduardo/cardapio)**
-
-🌐 **[Visualizar projeto online](https://cardapio-1.vercel.app/)**
-
----
-
-## 🎯 Objetivos profissionais
-
-- Evoluir como desenvolvedor de software.
-- Aprimorar conhecimentos em desenvolvimento backend.
-- Desenvolver aplicações web e sistemas completos.
-- Aprender boas práticas de programação e arquitetura de software.
-- Criar soluções eficientes e escaláveis para problemas reais.
-
----
-
-## 📚 Aprendizado contínuo
-
-Estou em constante aprendizado, desenvolvendo projetos práticos e aprofundando meus conhecimentos em programação, bancos de dados, versionamento de código e desenvolvimento de sistemas.
-
----
-
-## 📫 Entre em contato
-
-- 💼 **LinkedIn:** [Eduardo Carvalho](https://linkedin.com/in/e-duardo-carvalho/)
-- 🐙 **GitHub:** [Carvalho-Eduardo](https://github.com/Carvalho-Eduardo)
-- ✉️ **E-mail:** [e.duardo.carvalho@outlook.com](mailto:e.duardo.carvalho@outlook.com)
-
----
-
-<div align="center">
-
-**Transformando conhecimento em projetos e ideias em soluções.** 🚀
-
-</div>
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
