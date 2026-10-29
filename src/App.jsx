@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portifolio-pessoal">
       <div className="min-h-screen bg-[#0d1117] text-slate-100">
         <Header />
 
