@@ -122,7 +122,7 @@ function Home() {
           <img
             src={`${baseUrl}img/image.png`}
             alt="Foto profissional de Eduardo Carvalho"
-            className="relative aspect-[4/5] w-full rounded-2xl border border-[#293442] object-cover shadow-2xl shadow-blue-950/30"
+            className="relative aspect-4/5 w-full rounded-2xl border border-[#293442] object-cover shadow-2xl shadow-blue-950/30"
             onError={(event) => {
               console.error(
                 "Não foi possível carregar a foto:",

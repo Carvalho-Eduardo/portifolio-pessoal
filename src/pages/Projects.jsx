@@ -21,12 +21,12 @@ function Projects() {
         </p>
 
         <div className="mb-10 flex flex-wrap gap-3 text-xs text-slate-300 sm:text-sm">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-2">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/3 px-3 py-2">
             <FaCodeBranch className="text-blue-400" />
             Código disponível no GitHub
           </span>
 
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-2">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/3 px-3 py-2">
             <FaExternalLinkAlt className="text-green-400" />
             Demonstrações online
           </span>
